@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="鉴微 INSIGHT 企业安全运营平台产品案例：从分散数据到可追踪处置闭环。">
+  <title>鉴微 INSIGHT — Henrik</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/portfolio-tokens.css">
+<link rel="stylesheet" href="assets/css/portfolio-base.css">
+<link rel="stylesheet" href="assets/css/portfolio-components.css">
+<link rel="stylesheet" href="assets/css/portfolio-case.css">
+<script src="assets/js/portfolio.js" defer></script>
+</head>
+<body id="top" data-page="case" class="legacy-case"><a class="skip" href="#main">跳到正文</a>
+  <header class="header wrap portfolio-header"><a class="brand" href="index.html" aria-label="Henrik 作品集首页">Henrik<span>.</span></a><nav aria-label="主导航"><a data-nav="work" href="index.html#work" aria-current="location">作品项目</a><a data-nav="about" href="about.html">关于我</a><a data-nav="contact" class="nav-contact" href="about.html#contact">联系我 <span aria-hidden="true">↗</span></a></nav></header>
+
+  <main id="main">
+    <section class="case-hero shell hero">
+      <p class="case-eyebrow">鉴微 INSIGHT · 企业安全运营</p>
+      <h1>串联安全数据，<br>让处置<span class="accent">有迹可循。</span></h1>
+      <p class="case-subtitle">一套覆盖资产、风险、智能研判、工单、复测与报告的高保真产品原型。</p>
+      <div class="case-demo-action">
+        <a class="button-dark" href="./demo/index.html" target="_blank" rel="noopener noreferrer">体验交互原型 <span aria-hidden="true">↗</span></a>
+      </div>
+    <p class="stage-note">企业安全运营 · 高保真交互原型</p></section>
+
+    <figure class="feature-frame feature-frame-blue">
+      <button class="zoom" data-zoom aria-label="放大：鉴微 INSIGHT 仪表盘完整界面"><img src="assets/project/final-dashboard.png" alt="鉴微 INSIGHT 仪表盘完整界面" fetchpriority="high" width="1440" height="900"></button>
+      <figcaption>安全运营总览：先看风险，再进入处置。</figcaption>
+    </figure>
+
+    <section class="case-intro shell case-section">
+      <div class="intro-copy">
+        <p class="section-number">/ 项目背景</p>
+        <h2>安全运营的问题，不只是“信息太多”。</h2>
+        <p class="lead">当资产、漏洞、检测结果、工单与报告分散在不同页面时，用户真正缺失的是一条可确认、可执行、可追溯的决策链。</p>
+        <p>这个项目的目标不是再做一个数据大屏，而是把风险治理的核心对象和状态串起来：用户可以从一项互联网暴露资产进入风险证据，发起 Agent 研判，确认处置方案，生成工单，并在复测后把结果回写到报告。</p>
+      </div>
+      <div class="prototype-note">当前展示为交互原型；任务运行与数据回写用于演示，不连接真实生产系统。</div><aside class="project-facts" aria-label="项目信息">
+        <dl><div><dt>方向</dt><dd>AI 产品 / 企业安全</dd></div><div><dt>角色</dt><dd>产品定义、信息架构、交互原型</dd></div><div><dt>交付</dt><dd>完整可交互 Web 原型</dd></div><div><dt>范围</dt><dd>13 个原型路由、8 个核心业务模块</dd></div></dl>
+      </aside>
+    </section>
+
+<div class="case-layout wrap"><aside class="toc"><details open><summary>阅读目录 <span aria-hidden="true">⌄</span></summary><nav aria-label="章节目录"><a href="#chapter-1"><span>01</span>核心判断</a><a href="#chapter-2"><span>02</span>定义问题</a><a href="#chapter-3"><span>03</span>组织系统</a><a href="#chapter-4"><span>04</span>建立优先级</a><a href="#chapter-5"><span>05</span>AI 与控制权</a><a href="#system"><span>06</span>系统设计</a><a href="#chapter-7"><span>07</span>交付结果</a><a href="#chapter-8"><span>08</span>下一步</a></nav></details></aside><div class="case-body">    <section class="chapter statement-section shell" id="chapter-1">
+      <p class="section-number">/ 核心判断</p>
+      <blockquote>用户不需要更多孤立的告警，<br>而需要知道：<em>先处理什么、为什么、谁来做，以及下一步会发生什么。</em></blockquote>
+    </section>
+
+    <section class="chapter case-section shell" id="chapter-2">
+      <div class="section-heading two-col-heading">
+        <div><p class="section-number">/ 01 定义问题</p><h2>用三个产品问题，收拢复杂需求。</h2></div>
+        <p>我把页面级需求重新组织为对象、优先级和闭环三类问题。它们既决定信息架构，也决定后续的交互验证重点。</p>
+      </div>
+      <div class="problem-grid">
+        <article><span>01</span><h3>看不清全局</h3><p>资产、风险和工单各有统计，但用户无法快速理解它们之间的关系与当前压力。</p></article>
+        <article><span>02</span><h3>排不出优先级</h3><p>风险等级不足以支持处置，还需要结合外部暴露、业务重要度、证据可信度和 SLA。</p></article>
+        <article><span>03</span><h3>闭不了环</h3><p>研判结论如果不能进入工单、复测和报告，就只是一次性的分析结果。</p></article>
+      </div>
+    </section>
+
+    <figure class="wide-image shell">
+      <button class="zoom" data-zoom aria-label="放大：资产中心界面，包含概览指标、筛选器与资产表格"><img src="assets/project/final-assets.png" alt="资产中心界面，包含概览指标、筛选器与资产表格" loading="lazy" width="1440" height="900"></button>
+      <figcaption><b>资产中心</b><span>将高风险、互联网暴露和核心资产作为可直接进入的工作视图。</span></figcaption>
+    </figure>
+
+    <section class="chapter case-section shell" id="chapter-3">
+      <div class="section-heading two-col-heading">
+        <div><p class="section-number">/ 02 组织系统</p><h2>让信息架构围绕业务对象生长。</h2></div>
+        <p>导航没有照搬组织分工，而是沿着治理对象展开。任何详情都能看到来源、关联对象、当前状态和可执行动作。</p>
+      </div>
+      <div class="flow-line" aria-label="产品业务闭环">
+        <div><span>01</span><b>资产</b><small>识别范围</small></div><i>→</i>
+        <div><span>02</span><b>风险</b><small>确认优先级</small></div><i>→</i>
+        <div><span>03</span><b>Agent</b><small>生成研判</small></div><i>→</i>
+        <div><span>04</span><b>工单</b><small>执行整改</small></div><i>→</i>
+        <div><span>05</span><b>复测</b><small>验证结果</small></div><i>→</i>
+        <div><span>06</span><b>报告</b><small>沉淀结论</small></div>
+      </div>
+    </section>
+
+    <section class="chapter image-story image-story-soft" id="chapter-4">
+      <div class="shell">
+        <div class="section-heading two-col-heading">
+          <div><p class="section-number">/ 03 建立优先级</p><h2>从“风险列表”转向“处置队列”。</h2></div>
+          <p>列表保留专业信息密度，同时把严重等级、影响资产、状态、责任人和 SLA 放到同一视线内。用户可以在扫描过程中直接进入研判或建单。</p>
+        </div>
+        <button class="zoom" data-zoom aria-label="放大：风险管理界面，展示风险等级、影响资产、状态、责任人和 SLA"><img src="assets/project/final-risks.png" alt="风险管理界面，展示风险等级、影响资产、状态、责任人和 SLA" loading="lazy" width="1440" height="900"></button>
+      </div>
+    </section>
+
+    <section class="chapter case-section shell agent-feature" id="chapter-5">
+      <div class="agent-copy">
+        <p class="section-number">/ 04 引入 AI，但保留控制权</p>
+        <h2>Agent 不是一个“生成答案”按钮。</h2>
+        <p>工作台把任务拆成目标理解、数据获取、证据判断、方案比较和写回审批。每一步都有状态与来源，冲突数据不会被悄悄忽略，任何生产写操作都停在人工确认之前。</p>
+        <ul class="decision-list">
+          <li><b>范围可见</b><span>任务目标、资产范围与数据截止时间始终可核对。</span></li>
+          <li><b>证据可追</b><span>研判结论关联风险、资产、工单与工具执行记录。</span></li>
+          <li><b>动作可控</b><span>创建或修改工单前展示变更预览，并要求人工审批。</span></li>
+        </ul>
+        <a class="text-link" href="case-agent.html">深入阅读 Agent 产品拆解 →</a>
+      </div>
+      <figure>
+        <button class="zoom" data-zoom aria-label="放大：重大漏洞应急研判 Agent 的任务计划与审批界面"><img src="assets/project/final-agent.png" alt="重大漏洞应急研判 Agent 的任务计划与审批界面" loading="lazy" width="1440" height="900"></button>
+        <figcaption>任务计划、执行进度、上下文与人工审批同时可见。</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter case-section shell" id="system">
+      <div class="section-heading two-col-heading">
+        <div><p class="section-number">/ 05 系统设计</p><h2>让复杂界面保持一致，而不是变得空。</h2></div>
+        <p>企业后台需要高信息密度。设计重点不是盲目留白，而是通过统一容器、间距和状态语义，降低每次阅读的重新学习成本。</p>
+      </div>
+      <div class="system-grid">
+        <article><b>4 / 8px</b><span>统一间距层级</span></article>
+        <article><b>400px</b><span>详情与筛选抽屉</span></article>
+        <article><b>3</b><span>响应式断点</span></article>
+        <article><b>0</b><span>1280px 页面级横向溢出（原交付记录）</span></article>
+      </div>
+      <div class="paired-images">
+        <figure><button class="zoom" data-zoom aria-label="放大：风险详情中的证据与验证信息"><img src="assets/project/risk-evidence.jpg" alt="风险详情中的证据与验证信息" loading="lazy" width="1425" height="891"></button><figcaption>证据与验证：把判断依据放在结论旁边。</figcaption></figure>
+        <figure><button class="zoom" data-zoom aria-label="放大：工单详情中的流程与状态信息"><img src="assets/project/ticket-workflow.jpg" alt="工单详情中的流程与状态信息" loading="lazy" width="1440" height="900"></button><figcaption>工单流转：把整改、复测和审计记录保留在同一条线上。</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="chapter outcome-section" id="chapter-7">
+      <div class="shell">
+        <p class="section-number">/ 交付结果</p>
+        <div class="outcome-grid">
+          <div class="outcome-title"><h2>从页面集合，推进到可演示的产品闭环。</h2></div>
+          <div class="outcome-metrics">
+            <article><b>13</b><span>个可访问产品路由</span></article>
+            <article><b>8</b><span>个核心业务页面</span></article>
+            <article><b>2</b><span>类完整 Agent 任务</span></article>
+          </div>
+          <div class="outcome-copy"><p class="caption">以下为原型交付范围，不代表真实业务收益或生产系统能力；本次视觉整理未新增用户测试。</p><p>最终原型支持浏览器前进/后退、抽屉与弹窗焦点管理、批量操作反馈、失败重试、状态回写和移动端适配。它不仅能展示视觉方案，也能用于评审关键流程与产品边界。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter reflection-section shell case-section" id="chapter-8">
+      <p class="section-number">/ 下一步</p>
+      <div class="section-heading two-col-heading">
+        <h2>原型验证了“怎么工作”，下一步需要验证“是否更好地工作”。</h2>
+        <div><p>后续应接入真实数据权限，验证风险排序规则，并围绕安全运营人员、业务负责人和管理层分别开展任务型可用性测试。</p><p>对 Agent 场景，还需要持续观察证据可信度、人工接管率和建议被采纳后的处置结果。</p></div>
+      </div>
+    </section>
+
+</div></div>    
+  <section class="related-projects wrap" aria-labelledby="related-title"><div class="related-heading"><div><p class="eyebrow">继续探索</p><h2 id="related-title">接着看看其他案例。</h2></div><a href="index.html#work">全部作品项目 →</a></div><div class="related-grid"><a class="related-item" href="projects/baidu-agent.html"><span>独立项目</span><h3>百度智搜 Agent</h3><p>研究、需求取舍与可信搜索原型</p><b aria-hidden="true">继续阅读 →</b></a><a class="related-item" href="case-agent.html"><span>鉴微专题</span><h3>漏洞应急研判 Agent</h3><p>证据、审批与人工控制权</p><b aria-hidden="true">继续阅读 →</b></a></div></section></main>
+
+  <footer class="footer wrap"><a href="index.html#work">← 返回全部项目</a><span>Henrik / 产品研究与交互设计</span><a href="#top">回到顶部 ↑</a></footer>
+<dialog id="image-dialog" aria-label="查看放大图片"><div class="dialog-bar"><p id="image-caption"></p><button type="button" id="close-image" aria-label="关闭放大图片">关闭 ×</button></div><img id="large-image" alt=""></dialog></body>
+</html>
